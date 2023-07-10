@@ -28,7 +28,7 @@
   "build":{
     "appId": "helloworld",
     "win":{
-      "target": ["portable"]           
+      "target": ["nsis"]           
     }
   }
 }
