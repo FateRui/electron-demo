@@ -22,5 +22,11 @@
     "koa-mount": "^4.0.0",
     "koa-router": "^12.0.0",
     "koa-static": "^5.0.0"
+  },
+  "build":{
+    "appId": "helloworld",
+    "win":{
+      "target": ["portable"]           
+    }
   }
 }
