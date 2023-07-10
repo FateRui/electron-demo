@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "build:linux": "electron-builder --linux"
   },
   "files": [
     "static/**/*"
