@@ -14,6 +14,7 @@ function createWindow(port) {
   });
 
   win.loadURL(`http://127.0.0.1:${port}`);
+  // win.loadFile(`index.html`);
   win.webContents.openDevTools();
 }
 
@@ -26,10 +27,11 @@ app.whenReady().then(() => {
         createWindow(port);
       }
     });
-    app.on("window-all-closed", () => {
-      app.quit();
-    });
   });
+});
+
+app.on("window-all-closed", () => {
+  app.quit();
 });
 
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
