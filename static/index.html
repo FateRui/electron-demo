@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html lang=en>
+<html>
 
 <head>
-	<meta charset=utf-8>
-	<meta http-equiv=X-UA-Compatible content="IE=edge">
-	<meta name=viewport content="width=device-width,initial-scale=1">
-	<link rel=icon href=/favicon.ico>
-	<title>yingxiang</title>
-	<link href=/css/chunk-1ea4d408.a01a44a1.css rel=prefetch>
-	<link href=/css/chunk-76d46187.910a74a5.css rel=prefetch>
-	<link href=/js/chunk-1ea4d408.5e4b9601.js rel=prefetch>
-	<link href=/js/chunk-76d46187.88f7def3.js rel=prefetch>
-	<link href=/css/app.13e8e7f9.css rel=preload as=style>
-	<link href=/css/chunk-vendors.af67b8ba.css rel=preload as=style>
-	<link href=/js/app.32be9473.js rel=preload as=script>
-	<link href=/js/chunk-vendors.f81d0cab.js rel=preload as=script>
-	<link href=/css/chunk-vendors.af67b8ba.css rel=stylesheet>
-	<link href=/css/app.13e8e7f9.css rel=stylesheet>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=renderer content=webkit>
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel=icon href=/favicon.ico>
+    <title>Vue Element Admin</title>
+    <link href=/static/css/app.e44a11ae.css rel=preload as=style>
+    <link href=/static/css/chunk-libs.3dfb7769.css rel=preload as=style>
+    <link href=/static/js/app.ecebfbd9.js rel=preload as=script>
+    <link href=/static/js/chunk-elementUI.32ca29fe.js rel=preload as=script>
+    <link href=/static/js/chunk-libs.41d7c489.js rel=preload as=script>
+    <link href=/static/css/chunk-libs.3dfb7769.css rel=stylesheet>
+    <link href=/static/css/app.e44a11ae.css rel=stylesheet>
+    <style>
+
+body{
+  overflow: overlay; /*滚动条会笼罩在页面之上*/
+}
+body:hover ::-webkit-scrollbar{
+  visibility: visible;
+}
+body::-webkit-scrollbar {
+    visibility: hidden;
+}
+::-webkit-scrollbar{
+  background-color: transparent;
+  width: 6px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 2px;
+  width: 6px;
+}
+::-webkit-scrollbar{
+  padding: 0 2px;
+}
+::-webkit-scrollbar-thumb{
+  margin: 0 2px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.2);
+}
+    </style>
 </head>
 
-<body><noscript><strong>We're sorry but yingxiang doesn't work properly without JavaScript enabled. Please enable it to
-			continue.</strong></noscript>
-	<div id=app></div>
-	<script src=/js/chunk-vendors.f81d0cab.js></script>
-	<script src=/js/app.32be9473.js></script>
-	<script>
-		fetch('/api/userinfo')
-	</script>
-	<script>
-		window.document.title = `宫颈癌筛查：` + window.location.origin;
-	</script>
+<body>
+    <div id=app></div>
+    <script>(function (c) { function e(e) { for (var u, d, f = e[0], k = e[1], t = e[2], r = 0, b = []; r < f.length; r++)d = f[r], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0; for (u in k) Object.prototype.hasOwnProperty.call(k, u) && (c[u] = k[u]); o && o(e); while (b.length) b.shift()(); return h.push.apply(h, t || []), n() } function n() { for (var c, e = 0; e < h.length; e++) { for (var n = h[e], u = !0, d = 1; d < n.length; d++) { var f = n[d]; 0 !== a[f] && (u = !1) } u && (h.splice(e--, 1), c = k(k.s = n[0])) } return c } var u = {}, d = { runtime: 0 }, a = { runtime: 0 }, h = []; function f(c) { return k.p + "static/js/" + ({ "chunk-commons": "chunk-commons" }[c] || c) + "." + { "chunk-04c96b79": "3239c202", "chunk-1789ada2": "b3fc40fa", "chunk-155e0ad2": "02c0d6de", "chunk-1d23a968": "800b926e", "chunk-bfa74646": "08595dfd", "chunk-91398bbe": "6b5a60c6", "chunk-2d0c0353": "2956c19d", "chunk-2d0c84d3": "170fc152", "chunk-158734a0": "18c76a39", "chunk-1628ecf3": "03b9ee04", "chunk-2d0ac416": "3eb6fca4", "chunk-7a0bc8dc": "9d9620f1", "chunk-b8e95a0a": "dfc11a03", "chunk-2d0c8bf7": "0a5967fa", "chunk-2d0e4e1f": "fc1f2843", "chunk-2d0e944c": "a3c94386", "chunk-2d20f537": "cd433c1d", "chunk-2d2104c6": "dce8fd59", "chunk-2d2105d3": "f58cc2ad", "chunk-2d210b83": "fad5ddb2", "chunk-2d226cab": "f9b7da2c", "chunk-2d229205": "8b56f90c", "chunk-2d230fe7": "83dafd03", "chunk-3582ab29": "6d5462a4", "chunk-439e4718": "2fb018a2", "chunk-471f39b1": "2329f4f4", "chunk-490ab528": "2dc913e3", "chunk-4c9ef285": "3c03f6f7", "chunk-4dd23862": "a51e4593", "chunk-5588d492": "31f71471", "chunk-58ada7f6": "77d2cd51", "chunk-5b6f2742": "4c90f143", "chunk-6403ec67": "d430438b", "chunk-62f46b39": "85fa8bc6", "chunk-6e83591c": "9e852703", "chunk-5164a781": "0353cf20", "chunk-78c8a4ac": "f4e8534c", "chunk-70592fa6": "731e1eb4", "chunk-71e93d33": "b2a249b0", "chunk-7348d640": "3cde6722", "chunk-2d0d6710": "919788e9", "chunk-74926326": "a5007ff8", "chunk-75128e5a": "bfd07665", "chunk-7b9a000c": "07747797", "chunk-90a8aa5a": "b314dec3", "chunk-976c95e2": "434782a7", "chunk-acf52e6e": "f227dba2", "chunk-ad6614d8": "c114c42b", "chunk-bacc0f62": "d74e4e8e", "chunk-c1c44740": "1c23fe17", "chunk-commons": "933bc88e", "chunk-0d1c46e8": "759fd70b", "chunk-38129b08": "2dd777c0", "chunk-30d67c0e": "6d58d579", "chunk-365dc3d2": "fbad89a8", "chunk-3996aaed": "72c49320", "chunk-6c35146c": "f5774c07", "chunk-332739e1": "c209a36a", "chunk-370b8b5e": "23470738", "chunk-434c652f": "32ed8c23", "chunk-a090e4f8": "8f602096", "chunk-9e9c9b90": "1256607f", "chunk-2f2b5546": "3e5b5e41", "chunk-2d0a519f": "e98bfeef", "chunk-2d0f0a2e": "e049aacb", "chunk-ac1361dc": "138cd8c9", "chunk-f8468306": "23b738e4", "chunk-f899a336": "30ab927b", "chunk-fbffb73e": "f7e75432", "chunk-9a21ec70": "85f74ff0", "chunk-2d0e6c67": "09a1a068", "chunk-310bc3a1": "ddf584a2", "chunk-43f8ff7c": "ce10c6c7" }[c] + ".js" } function k(e) { if (u[e]) return u[e].exports; var n = u[e] = { i: e, l: !1, exports: {} }; return c[e].call(n.exports, n, n.exports, k), n.l = !0, n.exports } k.e = function (c) { var e = [], n = { "chunk-04c96b79": 1, "chunk-1789ada2": 1, "chunk-155e0ad2": 1, "chunk-1d23a968": 1, "chunk-bfa74646": 1, "chunk-91398bbe": 1, "chunk-158734a0": 1, "chunk-1628ecf3": 1, "chunk-7a0bc8dc": 1, "chunk-b8e95a0a": 1, "chunk-3582ab29": 1, "chunk-439e4718": 1, "chunk-471f39b1": 1, "chunk-490ab528": 1, "chunk-4dd23862": 1, "chunk-5588d492": 1, "chunk-5b6f2742": 1, "chunk-6403ec67": 1, "chunk-62f46b39": 1, "chunk-78c8a4ac": 1, "chunk-70592fa6": 1, "chunk-7348d640": 1, "chunk-7b9a000c": 1, "chunk-90a8aa5a": 1, "chunk-976c95e2": 1, "chunk-acf52e6e": 1, "chunk-ad6614d8": 1, "chunk-c1c44740": 1, "chunk-commons": 1, "chunk-38129b08": 1, "chunk-30d67c0e": 1, "chunk-365dc3d2": 1, "chunk-3996aaed": 1, "chunk-332739e1": 1, "chunk-370b8b5e": 1, "chunk-434c652f": 1, "chunk-a090e4f8": 1, "chunk-2f2b5546": 1, "chunk-ac1361dc": 1, "chunk-f8468306": 1, "chunk-f899a336": 1, "chunk-fbffb73e": 1 }; d[c] ? e.push(d[c]) : 0 !== d[c] && n[c] && e.push(d[c] = new Promise((function (e, n) { for (var u = "static/css/" + ({ "chunk-commons": "chunk-commons" }[c] || c) + "." + { "chunk-04c96b79": "13a7e89e", "chunk-1789ada2": "9b8c6c9b", "chunk-155e0ad2": "b07219de", "chunk-1d23a968": "9d8162eb", "chunk-bfa74646": "cb8c5470", "chunk-91398bbe": "23888889", "chunk-2d0c0353": "31d6cfe0", "chunk-2d0c84d3": "31d6cfe0", "chunk-158734a0": "ed23d07d", "chunk-1628ecf3": "7d926db9", "chunk-2d0ac416": "31d6cfe0", "chunk-7a0bc8dc": "7a6c56e1", "chunk-b8e95a0a": "c7dfc3db", "chunk-2d0c8bf7": "31d6cfe0", "chunk-2d0e4e1f": "31d6cfe0", "chunk-2d0e944c": "31d6cfe0", "chunk-2d20f537": "31d6cfe0", "chunk-2d2104c6": "31d6cfe0", "chunk-2d2105d3": "31d6cfe0", "chunk-2d210b83": "31d6cfe0", "chunk-2d226cab": "31d6cfe0", "chunk-2d229205": "31d6cfe0", "chunk-2d230fe7": "31d6cfe0", "chunk-3582ab29": "a44d9352", "chunk-439e4718": "1c26571e", "chunk-471f39b1": "ccfd5595", "chunk-490ab528": "55ec8d04", "chunk-4c9ef285": "31d6cfe0", "chunk-4dd23862": "7a0c24ef", "chunk-5588d492": "b1dd7a76", "chunk-58ada7f6": "31d6cfe0", "chunk-5b6f2742": "c85e8332", "chunk-6403ec67": "860218f8", "chunk-62f46b39": "fc684471", "chunk-6e83591c": "31d6cfe0", "chunk-5164a781": "31d6cfe0", "chunk-78c8a4ac": "b5c17e32", "chunk-70592fa6": "81ed71f2", "chunk-71e93d33": "31d6cfe0", "chunk-7348d640": "e5e4dfbf", "chunk-2d0d6710": "31d6cfe0", "chunk-74926326": "31d6cfe0", "chunk-75128e5a": "31d6cfe0", "chunk-7b9a000c": "d35d2a83", "chunk-90a8aa5a": "33cb7757", "chunk-976c95e2": "543e5073", "chunk-acf52e6e": "c62f5167", "chunk-ad6614d8": "1fc537f3", "chunk-bacc0f62": "31d6cfe0", "chunk-c1c44740": "6d24dacd", "chunk-commons": "bae41320", "chunk-0d1c46e8": "31d6cfe0", "chunk-38129b08": "5b3acee5", "chunk-30d67c0e": "5b27f791", "chunk-365dc3d2": "2832fa09", "chunk-3996aaed": "b7834c17", "chunk-6c35146c": "31d6cfe0", "chunk-332739e1": "95371419", "chunk-370b8b5e": "8394d684", "chunk-434c652f": "320fb6e3", "chunk-a090e4f8": "90a6ce5e", "chunk-9e9c9b90": "31d6cfe0", "chunk-2f2b5546": "b4c167e9", "chunk-2d0a519f": "31d6cfe0", "chunk-2d0f0a2e": "31d6cfe0", "chunk-ac1361dc": "37fc41f2", "chunk-f8468306": "42e3a951", "chunk-f899a336": "55203a7a", "chunk-fbffb73e": "2e6f426d", "chunk-9a21ec70": "31d6cfe0", "chunk-2d0e6c67": "31d6cfe0", "chunk-310bc3a1": "31d6cfe0", "chunk-43f8ff7c": "31d6cfe0" }[c] + ".css", a = k.p + u, h = document.getElementsByTagName("link"), f = 0; f < h.length; f++) { var t = h[f], r = t.getAttribute("data-href") || t.getAttribute("href"); if ("stylesheet" === t.rel && (r === u || r === a)) return e() } var b = document.getElementsByTagName("style"); for (f = 0; f < b.length; f++) { t = b[f], r = t.getAttribute("data-href"); if (r === u || r === a) return e() } var o = document.createElement("link"); o.rel = "stylesheet", o.type = "text/css", o.onload = e, o.onerror = function (e) { var u = e && e.target && e.target.src || a, h = new Error("Loading CSS chunk " + c + " failed.\n(" + u + ")"); h.code = "CSS_CHUNK_LOAD_FAILED", h.request = u, delete d[c], o.parentNode.removeChild(o), n(h) }, o.href = a; var i = document.getElementsByTagName("head")[0]; i.appendChild(o) })).then((function () { d[c] = 0 }))); var u = a[c]; if (0 !== u) if (u) e.push(u[2]); else { var h = new Promise((function (e, n) { u = a[c] = [e, n] })); e.push(u[2] = h); var t, r = document.createElement("script"); r.charset = "utf-8", r.timeout = 120, k.nc && r.setAttribute("nonce", k.nc), r.src = f(c); var b = new Error; t = function (e) { r.onerror = r.onload = null, clearTimeout(o); var n = a[c]; if (0 !== n) { if (n) { var u = e && ("load" === e.type ? "missing" : e.type), d = e && e.target && e.target.src; b.message = "Loading chunk " + c + " failed.\n(" + u + ": " + d + ")", b.name = "ChunkLoadError", b.type = u, b.request = d, n[1](b) } a[c] = void 0 } }; var o = setTimeout((function () { t({ type: "timeout", target: r }) }), 12e4); r.onerror = r.onload = t, document.head.appendChild(r) } return Promise.all(e) }, k.m = c, k.c = u, k.d = function (c, e, n) { k.o(c, e) || Object.defineProperty(c, e, { enumerable: !0, get: n }) }, k.r = function (c) { "undefined" !== typeof Symbol && Symbol.toStringTag && Object.defineProperty(c, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(c, "__esModule", { value: !0 }) }, k.t = function (c, e) { if (1 & e && (c = k(c)), 8 & e) return c; if (4 & e && "object" === typeof c && c && c.__esModule) return c; var n = Object.create(null); if (k.r(n), Object.defineProperty(n, "default", { enumerable: !0, value: c }), 2 & e && "string" != typeof c) for (var u in c) k.d(n, u, function (e) { return c[e] }.bind(null, u)); return n }, k.n = function (c) { var e = c && c.__esModule ? function () { return c["default"] } : function () { return c }; return k.d(e, "a", e), e }, k.o = function (c, e) { return Object.prototype.hasOwnProperty.call(c, e) }, k.p = "/", k.oe = function (c) { throw console.error(c), c }; var t = window["webpackJsonp"] = window["webpackJsonp"] || [], r = t.push.bind(t); t.push = e, t = t.slice(); for (var b = 0; b < t.length; b++)e(t[b]); var o = r; n() })([]);</script>
+    <script src=/static/js/chunk-elementUI.32ca29fe.js></script>
+    <script src=/static/js/chunk-libs.41d7c489.js></script>
+    <script src=/static/js/app.ecebfbd9.js></script>
 </body>
 
 </html>
